@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Files using XMLHttpRequest - Minimal</title>
+	<link rel="stylesheet" type="text/css" href="css/core.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/core.js"></script>
+</head>
+<body>
+	<div id="page">
+	  <form id="frm_upload_docs" action="upload_docs.php" method=post enctype="multipart/form-data">
+		<div class="row">
+		  <div class="wrapper"><label for="fileToUpload">Select a File to Upload</label></div><br />
+		  <input type="file" class="textbox" name="file_uploads[]" id="file uploads[]" multiple>
+		</div>
+		<div id="fileName"></div>
+		<div id="fileSize"></div>
+		<div id="fileType"></div>
+		<div class="row">
+		</div>
+		  <input type="submit" id="doc_uploads_btn" value="Upload">
+	   
+	  </form>
+	  <br />
+	  <div class="wrapper"><label>Preview</label></div>
+	  
+	  <iframe id="file_downloader"><div id="pictureShow"></div></iframe>
+	  
+	
+</body>
+</html>
+
